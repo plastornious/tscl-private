@@ -1,6 +1,15 @@
 :root {
-    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(assets/background.png);
+    min-height: 100vh;
+    min-width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(components/background.png);
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
     position: fixed;
+    --color-background: #363535;
+    --color-on-background: white;
+    --color-background-hover: #2b2a2a;
+    --color-on-background-hover: white;
+    --color-primary: #363535;
+    --color-on-primary: white;
 }

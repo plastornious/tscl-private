@@ -12,18 +12,24 @@
             rel="stylesheet"
         />
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/components/nav.css">
+    <link rel="stylesheet" href="css/components/typografy.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/components/btn.css">
     <script src="https://unpkg.com/vue@3.2.31/dist/vue.global.js"></script>
     <script src="https://unpkg.com/vue-router@4.0.14/dist/vue-router.global.prod.js"></script>
     <script type="module" src="js/home.js"></script>
 </head>
 <body id="app">
-    <header>
-        <div class="logo">
-            <a href=""><img src="assets/tscl0.png"></a>
-        </div>
+    <header :class='{ dark: store.dark }'>
         <nav class="nav">
-            
+            <a href=""><img src="assets/tscl0.png"></a>
+            <router link class="nav__tab" to="/list.js">
+                <span class="type-label-lg">List</span>
+            </router>
         </nav>
     </header>
+    <router-view :class="{ dark: store.dark }"></router-view>
 </body>
 </html>

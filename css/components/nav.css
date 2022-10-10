@@ -1,0 +1,36 @@
+:root {
+    --color-background: white;
+    --color-on-background: white;
+    --color-primary: #1f1e1e;
+    --color-on-primary: white;
+    --color-on-hover: #0066ff;
+}
+*{
+    margin: 0;
+}
+.nav img{
+    width: 80px;
+}
+.nav{
+    background-color: var(--color-primary);
+    background-position: center;
+    display: flex;
+    padding: 1% 2%;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav .nav__tab {
+    padding-top: 4px;
+    border-bottom: 4px solid transparent;
+    display: flex;
+    align-items: center;
+    padding-inline: 0.5rem;
+    transition: border-color 100ms ease;
+    color: var(--color-on-primary);
+}
+.nav .nav__tab.router-link-active {
+    border-color: var(--color-on-primary);
+}
+.nav .nav__tab:hover {
+    border-color: var(--color-on-hover);
+}
